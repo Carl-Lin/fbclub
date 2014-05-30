@@ -1,0 +1,15 @@
+//extends layout
+
+doctype 5
+html
+	head
+		include head
+		link(rel='stylesheet',	href='/stylesheets/mapstyle.css')
+		//script(src='/javascripts/FBlogin.js')
+		script(src='/javascripts/map.js')
+	
+	body(onload="initialize()")
+		div#map_canvas
+		div#cover
+		div#arrow_box_out
+			div.arrow_box

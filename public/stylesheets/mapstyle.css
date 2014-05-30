@@ -1,0 +1,57 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#map_canvas {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+}
+#cover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #000;
+  opacity: 0.2;
+  z-index: 150;
+}
+#arrow_box_out {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  z-index: 200;
+}
+.arrow_box {
+  position: relative;
+  background: #f2a31b;
+  border: 4px solid #8f7d53;
+  height: 100%;
+  width: 100%;
+}
+.arrow_box:after,
+.arrow_box:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.arrow_box:after {
+  border-color: rgba(242,163,27,0);
+  border-top-color: #f2a31b;
+  border-width: 30px;
+  left: 50%;
+  margin-left: -30px;
+}
+.arrow_box:before {
+  border-color: rgba(143,125,83,0);
+  border-top-color: #8f7d53;
+  border-width: 36px;
+  left: 50%;
+  margin-left: -36px;
+}
